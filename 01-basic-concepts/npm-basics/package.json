@@ -1,0 +1,27 @@
+{
+  "name": "npm-basics",
+  "version": "1.0.0",
+  "description": "Understanding NPM",
+  "homepage": "https://github.com/vasusinghal-dev/learning-react/tree/main#readme",
+  "bugs": {
+    "url": "https://github.com/vasusinghal-dev/learning-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasusinghal-dev/learning-react.git#main"
+  },
+  "license": "ISC",
+  "author": "Vasu Singhal",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
