@@ -1,0 +1,5 @@
+.cards-container {
+  display: flex;
+  align-items: center;
+  margin: 50px 200px;
+}
