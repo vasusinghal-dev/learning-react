@@ -6,8 +6,8 @@ const Cards = () => {
   // Return a grid of cards
   return (
     <div className="cards-container">
-      {cardsArray.map((card, index) => (
-        <Card card={card} key={index} />
+      {cardsArray.map((card) => (
+        <Card card={card} key={card.id} />
       ))}
     </div>
   );
