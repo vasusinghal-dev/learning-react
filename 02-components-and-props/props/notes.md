@@ -168,6 +168,71 @@ Keys tell React:
 
 ---
 
-Got you — let’s make **props in React** super understandable, detailed enough to grasp clearly, but still easy to read. I’ll write it like a notebook section you could just paste in your notes.
+## **React Keys & the Index Trap**
+
+React uses **keys** to identify which list items have changed, been added, or removed.
+Keys help React efficiently **reconcile and update** the DOM.
+
+---
+
+### ⚠️ Problem: Using Index as Key
+
+Example (❌ bad):
+
+```jsx
+todos.map((todo, index) => <Todo {...todo} key={index} />);
+```
+
+**Why it’s risky:**
+
+- When you **add, remove, or reorder** list items, React may reuse the wrong DOM elements.
+- Causes **incorrect UI rendering** — wrong data, mismatched components, or lost state.
+- Index-based keys break React’s internal mapping logic.
+
+---
+
+### ✅ Correct Approach
+
+Each item should have a **unique and stable ID**.
+
+Example (✅ good):
+
+```jsx
+todos.map((todo) => <Todo {...todo} key={todo.id} />);
+```
+
+If items don’t have an ID:
+
+- Assign one when creating them:
+
+  ```js
+  let todoCounter = 1;
+  function createNewTodo(text) {
+    return { id: todoCounter++, text, completed: false };
+  }
+  ```
+
+- Or generate one using a library:
+
+  ```js
+  import shortid from "shortid";
+  function createNewTodo(text) {
+    return { id: shortid.generate(), text, completed: false };
+  }
+  ```
+
+---
+
+### 🧩 When It’s _Okay_ to Use Index
+
+Only if **all three** conditions are true:
+
+1. The list is **static** (never changes).
+2. The items **don’t have IDs**.
+3. The list is **never reordered or filtered**.
+
+Example:
+
+- Static lists like “Terms of Service” paragraphs or contributor names.
 
 ---
