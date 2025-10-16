@@ -7,7 +7,7 @@ const Cards = () => {
   return (
     <div className="cards-container">
       {cardsArray.map((card) => (
-        <Card card={card} key={card.id} />
+        <Card card={card} key={card.id} /> // passing props to children
       ))}
     </div>
   );
