@@ -12,12 +12,9 @@ Each folder or commit represents a topic, mini-project, or feature I’m explori
 - Hooks (`useState`, `useEffect`, `useContext`, etc.)  
 - React Router  
 - Project Setup with Vite / CRA  
-- Clean Code & Folder Structure  
+- Clean Code & Folder Structure
 
----
-
-## 🧩 Projects / Demos
-*(Will add as I build them)*
+💡 **Pro Tip:** Check out `notes.md` inside each topic folder for **detailed notes and explanations** to better understand each concept.
 
 ---
 
