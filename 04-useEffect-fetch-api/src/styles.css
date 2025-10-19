@@ -1,0 +1,8 @@
+/* styles.css: bundle all CSS here */
+@import "./styles/general.css";
+@import "./styles/header.css";
+@import "./styles/card.css";
+@import "./styles/cards.css";
+@import "./styles/notFound.css";
+@import "./styles/shimmer.css";
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
