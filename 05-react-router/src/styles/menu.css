@@ -1,0 +1,217 @@
+.menu-container {
+  margin: 20px 600px;
+}
+
+.menu-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 26px 16px;
+}
+
+.menu-info {
+  background: linear-gradient(
+    rgb(255, 255, 255) -6.71%,
+    rgb(235, 235, 242) 56.19%,
+    rgb(223, 223, 231) 106.56%
+  );
+  padding: 0 16px 16px;
+  border-radius: 0 0 30px 30px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border: 1px solid rgba(2, 6, 12, 0.15);
+  border-radius: 20px;
+  padding: 20px 0;
+}
+
+.rating-price {
+  display: flex;
+  font-size: 14px;
+  gap: 4px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.cuisines {
+  font-size: 14px;
+  margin: 10px 8px;
+  font-weight: bold;
+  color: #ff5200;
+  margin: 8 20px;
+}
+
+.location {
+  display: flex;
+  margin: 0 20px;
+}
+
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.design > .circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: gainsboro;
+}
+
+.design > .line {
+  width: 1px;
+  height: 23px;
+  background-color: #c4c4c4;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 8px;
+  margin-left: 12px;
+
+  font-size: 13px;
+  color: #02060c;
+}
+
+.location-details > .place {
+  display: flex;
+  gap: 12px;
+  letter-spacing: 0;
+}
+
+.location-details > .place > .outlet,
+.location-details > .delivery-time {
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.location-details .place .down-sign {
+  color: orangered;
+}
+
+.separator {
+  height: 0.5px;
+  background-color: rgba(2, 6, 12, 0.15);
+  width: calc(100% - 32px);
+  margin: 24px auto;
+}
+
+.menu-card-container {
+  margin: 24px 16px 16px;
+}
+
+.menu-card-container > .recommended {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.menu-card {
+  display: flex;
+}
+
+.menu-card > .info > .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-card > .info > .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.menu-card > .info > .rating {
+  color: #11ac12;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.menu-card > .info > .rating > img {
+  width: 12px;
+}
+
+.menu-card > .info > .rating > .avgRating {
+  color: #02060c99;
+}
+
+.menu-card > .info > .menu-description {
+  color: #02060c99;
+  margin-top: 12px;
+  word-break: break-all;
+}
+
+.menu-card > .info > .menu-description.expanded {
+  word-break: normal;
+}
+
+.menu-card > .info > .menu-description > .expanded {
+  color: #02060c99;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.menu-card > .img-section {
+  height: 174px;
+  position: relative;
+  margin-left: 60px;
+}
+
+.menu-card > .img-section img {
+  width: 156px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-card > .img-section > .button-section {
+  position: absolute;
+  bottom: -4px;
+  left: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-card > .img-section > .button-section > .add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 38px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1ba672;
+  background-color: white;
+  border: 1px solid rgba(2, 6, 12, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.menu-card > .img-section > .button-section > .add-button:hover {
+  background: #d9dadb;
+  border: none;
+}
+
+.menu-card > .img-section > .button-section > .customisable {
+  color: #02060c73;
+  font-size: 13px;
+}
+
+.menu-container > .end {
+  height: 16px;
+  border-bottom: 16px solid rgba(2, 6, 12, 0.0509803922);
+}

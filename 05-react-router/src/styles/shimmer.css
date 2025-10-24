@@ -1,0 +1,75 @@
+.shimmer-container {
+  display: flex;
+  align-items: stretch;
+  margin: 50px 200px;
+  flex-wrap: wrap;
+}
+
+.shimmercard {
+  width: 390px;
+  height: 370px;
+  border-radius: 20px;
+  margin: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.text-shimmer,
+.img-shimmer {
+  position: relative;
+  overflow: hidden;
+  background-color: lightgray; /* base color */
+}
+
+.img-shimmer {
+  height: 230px;
+}
+
+.shimmer-inner-container {
+  padding: 10px;
+}
+
+.text-shimmer {
+  border-radius: 4px;
+  background-color: lightgray;
+}
+
+.text-shimmer {
+  margin-top: 12px;
+  height: 25px;
+}
+
+/* shimmer animation */
+.img-shimmer::after,
+.text-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* make sure shimmer elements are positioned */
+.img-shimmer,
+.text-shimmer {
+  position: relative;
+  overflow: hidden;
+}
