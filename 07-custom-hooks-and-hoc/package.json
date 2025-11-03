@@ -1,0 +1,28 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx parcel public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "parcel": "^2.16.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.16",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4",
+    "tailwindcss": "^4.1.16"
+  }
+}

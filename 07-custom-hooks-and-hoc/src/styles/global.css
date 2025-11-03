@@ -1,0 +1,50 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import "tailwindcss";
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+@layer base {
+  html {
+    @apply h-full m-0 p-0;
+    font-family: "Gilroy-Medium", sans-serif;
+  }
+}
+
+@layer utilities {
+  .shimmer-effect {
+    @apply relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-[-150px]
+      after:h-full after:w-[150px]
+      after:bg-[linear-gradient(to_right,rgba(255,255,255,0)_0%,rgba(255,255,255,0.6)_50%,rgba(255,255,255,0)_100%)]
+      after:animate-[shimmer_1.5s_infinite];
+  }
+}
